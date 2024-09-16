@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(171, 230, 226);
+    margin-left: 300px;
+    font-family: Arial sans-serif;
+    padding: 20px;
+    align-content: center;
+    margin-right: 300px;
+}
+
+h1{
+    font-size: 35pt;
+    text-align: center;
+    margin-top: 5px;
+}
+
+section {
+    background: white;
+    padding: 1px;
+    margin-top: 1px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;  
+}
+
+h2 {
+    border-radius:15px;
+}
+
+button{
+    background-color: rgb(142, 143, 143);
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
