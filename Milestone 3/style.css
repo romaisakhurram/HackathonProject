@@ -2,7 +2,7 @@ body{
     margin: 20px;
     font-family: Arial,sans-serif;
     align-content: center;
-    background-color: #f3e5e5;
+    background-color: #f8f6f6;
     margin-left: 350px;
 }
 
@@ -37,7 +37,7 @@ button{
     padding: 10px 20px;
     border: none;
     border-radius: 2px solid;
-    background-color: rgb(132, 132, 240);
+    background-color: rgb(250, 250, 250);
     color:color rgb(52, 185, 25);
     cursor: pointer;
 }
