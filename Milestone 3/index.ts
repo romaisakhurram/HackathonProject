@@ -23,22 +23,23 @@ function generateResume (event:Event) : void{
   // Generated resume HTML
  
     resumeOutput.innerHTML =`
-    <h3><u>Personal Information</u></h3>
+    <h1> Resume </h1>
+    <h3>Personal Information</h3>
     <p><b>Name:</b> ${name}</p>
     <p><b>Email:</b> ${email}</p>
     <p><b>PhoneNumber:</b> ${phoneNumber}</p>
 
-    <h3><u>Education</u></h3>
+    <h3>Education</h3>
     <p><b>Institute:</b> ${institute}</p>
     <p><b>Degree:</b> ${degree}</p>
     <p><b>GraduationYear:</b> ${Gradeyear}</p>
 
-    <h3><u>Experience</u></h3>
+    <h3>Experience</h3>
     <p><b>Job Title:</b> ${jobTitle}</p>
     <p><b>Company Name:</b> ${company}</p>
     <p><b>Duration:</b> ${duration}</p>
 
-    <h3><u>Skills</u></h3>
+    <h3>Skills</h3>
     <ul>
     <li>${skills}</li>
     <ul>
