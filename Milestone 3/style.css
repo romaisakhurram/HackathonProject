@@ -115,15 +115,15 @@ button :hover {
     }
 
     h2, #resumeOutput, h3, #generated-resume {
-        width: 90%; /* Full width for mobile */
+        width: 90%;
     }
 
     input {
-        width: 90%; /* Full width for mobile */
+        width: 90%;
     }
 
     button {
-        width: 100%; /* Full width for mobile */
-        padding: 12px; /* Increase padding for easier tapping */
+        width: 100%; 
+        padding: 12px; 
     }
 }
