@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <section>
+            <h1>Dynamic Resume Builder</h1>
+        </section>
+    </header>
+     
+    <section>
+        <form id="resume-form">
+
+        <fieldset>
+            <h2>Personal Information</h2>
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" required> <br>
+
+            <label for="email"><b>E-mail:</b></label>
+            <input type="email"  id="email" required> <br>
+
+            <label for="phoneNumber"><b>PhoneNumber:</b></label>
+            <input type="number" id="phoneNumber" required>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2>Education</h2>
+            <label for="institute"><b>Institute:</b></label>
+            <input type="text" id="institute" required> <br>
+
+            <label for="degree"><b>Degree:</b></label>
+            <input type="text" id="degree" required> <br>
+
+            <label for="Gradeyear"><b>Year</b></label>
+            <input type="text" id="Gradeyear" required> <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <h2>Experience</h2>
+            <label for="jobTitle"><b>Job Title</b></label>
+            <input type="text" id="jobTitle" required> <br>
+
+            <label for="company"><b>Companay Name:</b></label>
+            <input type="text" id="company"> <br>
+
+            <label for="duration"><b>Duration</b></label>
+            <input type="text" id="duration"> <br>
+        </fieldset>
+          <br>
+        <fieldset>
+            <h2>Skills</h2>
+            <label for="skills"><b>Skills</b></label>
+            <input type="search" id="skills" required> <br>
+
+            <button type="submit">Generate Resume</button>
+        </fieldset>
+        <br>
+        </form>
+    </section>
+
+    <footer>
+        <section id="generated-resume">
+            <div id="resume-output"></div>
+        </section>
+        <script src="index.js"></script>
+    </footer>
+
+</body>
+</html>
