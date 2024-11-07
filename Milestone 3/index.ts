@@ -48,4 +48,3 @@ function generateResume (event:Event) : void{
 
 form.addEventListener(`submit` , generateResume);
 
-
