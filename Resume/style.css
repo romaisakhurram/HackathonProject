@@ -164,7 +164,7 @@ button , #downloadpdf{
  
     #resume-form{
     border: 5px solid  rgb(14, 26, 94) ;
-    width: 75%;
+    width: 85%;
     }
 
     fieldset{
@@ -176,12 +176,18 @@ button , #downloadpdf{
         text-align: center;
     }
 
-    h2, #resumeOutput, h3, #generated-resume {
-        width: 75%;
+    h2{
+        width: 85%;
+        font-size: 18px;
+        height: auto;
+    }
+
+    #resumeOutput, h3, #generated-resume {
+        width: 85%;
     }
 
     input {
-        width: 75%;
+        width: 85%;
     }
 
     button {
