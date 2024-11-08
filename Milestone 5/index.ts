@@ -1,5 +1,9 @@
 const form = document.getElementById(`resume-form`) as HTMLFormElement;
 const resumeOutput = document.getElementById(`resume-output`) as HTMLDivElement;
+const ShareableResume = document.getElementById('ShareableResume') as HTMLDivElement;  
+const downloadpdf = document.getElementById('downloadpdf') as
+HTMLButtonElement;
+
 
 function generateResume (event:Event) : void{
     event.preventDefault();
@@ -25,26 +29,29 @@ function generateResume (event:Event) : void{
     resumeOutput.innerHTML =`
     <h1> Resume </h1>
     <h3>Personal Information</h3>
-    <p><b>Name:</b> ${name}</p>
-    <p><b>Email:</b> ${email}</p>
-    <p><b>PhoneNumber:</b> ${phoneNumber}</p>
+    <p><b>Name:</b> <span contenteditable="true"> ${name} </span> </p>
+    <p><b>Email:</b> <span contenteditable="true"> ${email} </span> </p>
+    <p><b>PhoneNumber:</b> <span contenteditable="true"> ${phoneNumber} </span> </p>
 
     <h3>Education</h3>
-    <p><b>Institute:</b> ${institute}</p>
-    <p><b>Degree:</b> ${degree}</p>
-    <p><b>GraduationYear:</b> ${Gradeyear}</p>
+    <p><b>Institute:</b> <span contenteditable="true"> ${institute} </span> </p>
+    <p><b>Degree:</b> <span contenteditable="true"> ${degree} </span> </p>
+    <p><b>GraduationYear:</b> <span contenteditable="true"> ${Gradeyear} </span> </p>
 
     <h3>Experience</h3>
-    <p><b>Job Title:</b> ${jobTitle}</p>
-    <p><b>Company Name:</b> ${company}</p>
-    <p><b>Duration:</b> ${duration}</p>
+    <p><b>Job Title:</b> <span contenteditable="true"> ${jobTitle} </span> </p>
+    <p><b>Company Name:</b> <span contenteditable="true"> ${company} </span> </p>
+    <p><b>Duration:</b> <span contenteditable="true"> ${duration} </span> </p>
 
     <h3>Skills</h3>
     <ul>
-    <li>${skills}</li>
+    <li contenteditable="true">${skills}</li>
     <ul>
+    <br>
     `;
 }
-
 form.addEventListener(`submit` , generateResume);
 
+downloadpdf.addEventListener('click', () => {
+  window.print();
+});

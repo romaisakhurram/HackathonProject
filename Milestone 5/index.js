@@ -1,5 +1,7 @@
 var form = document.getElementById("resume-form");
 var resumeOutput = document.getElementById("resume-output");
+var ShareableResume = document.getElementById('ShareableResume');
+var downloadpdf = document.getElementById('downloadpdf');
 function generateResume(event) {
     event.preventDefault();
     var name = document.getElementById("name").value;
@@ -17,6 +19,9 @@ function generateResume(event) {
         return;
     }
     // Generated resume HTML
-    resumeOutput.innerHTML = "\n    <h1> Resume </h1>\n    <h3>Personal Information</h3>\n    <p><b>Name:</b> ".concat(name, "</p>\n    <p><b>Email:</b> ").concat(email, "</p>\n    <p><b>PhoneNumber:</b> ").concat(phoneNumber, "</p>\n\n    <h3>Education</h3>\n    <p><b>Institute:</b> ").concat(institute, "</p>\n    <p><b>Degree:</b> ").concat(degree, "</p>\n    <p><b>GraduationYear:</b> ").concat(Gradeyear, "</p>\n\n    <h3>Experience</h3>\n    <p><b>Job Title:</b> ").concat(jobTitle, "</p>\n    <p><b>Company Name:</b> ").concat(company, "</p>\n    <p><b>Duration:</b> ").concat(duration, "</p>\n\n    <h3>Skills</h3>\n    <ul>\n    <li>").concat(skills, "</li>\n    <ul>\n    ");
+    resumeOutput.innerHTML = "\n    <h1> Resume </h1>\n    <h3>Personal Information</h3>\n    <p><b>Name:</b> <span contenteditable=\"true\"> ".concat(name, " </span> </p>\n    <p><b>Email:</b> <span contenteditable=\"true\"> ").concat(email, " </span> </p>\n    <p><b>PhoneNumber:</b> <span contenteditable=\"true\"> ").concat(phoneNumber, " </span> </p>\n\n    <h3>Education</h3>\n    <p><b>Institute:</b> <span contenteditable=\"true\"> ").concat(institute, " </span> </p>\n    <p><b>Degree:</b> <span contenteditable=\"true\"> ").concat(degree, " </span> </p>\n    <p><b>GraduationYear:</b> <span contenteditable=\"true\"> ").concat(Gradeyear, " </span> </p>\n\n    <h3>Experience</h3>\n    <p><b>Job Title:</b> <span contenteditable=\"true\"> ").concat(jobTitle, " </span> </p>\n    <p><b>Company Name:</b> <span contenteditable=\"true\"> ").concat(company, " </span> </p>\n    <p><b>Duration:</b> <span contenteditable=\"true\"> ").concat(duration, " </span> </p>\n\n    <h3>Skills</h3>\n    <ul>\n    <li contenteditable=\"true\">").concat(skills, "</li>\n    <ul>\n    <br>\n    ");
 }
 form.addEventListener("submit", generateResume);
+downloadpdf.addEventListener('click', function () {
+    window.print();
+});
