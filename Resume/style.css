@@ -71,7 +71,7 @@ button{
     font-size: 15px;
 }
 
-button :hover {
+#submitButton :hover {
     background-color: black;
     color: whitesmoke;
 }
@@ -113,7 +113,7 @@ button , #downloadpdf{
 }
 
 #downloadpdf:hover{
-    background-color: blanchedalmond;
+    background-color: black;
     color: white;
 }
 
