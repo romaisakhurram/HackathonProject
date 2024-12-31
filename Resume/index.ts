@@ -4,7 +4,6 @@ const ShareableResume = document.getElementById('ShareableResume') as HTMLDivEle
 const downloadpdf = document.getElementById('downloadpdf') as
 HTMLButtonElement;
 
-
 function generateResume (event:Event) : void{
     event.preventDefault();
 
